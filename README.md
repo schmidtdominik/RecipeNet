@@ -1,7 +1,7 @@
 # RecipeNet
 
 This neural network can tell you which other ingredients you can add to your cooking recipes to improve them.  
-You can read the full article [here](https://dominikschmidt.xyz/recipe-net) and get the used dataset [here](https://dominikschmidt.xyz/recipes-simplified-all).
+You can read the full article [here](https://dominikschmidt.xyz/recipe-net) and get the used dataset [here](https://dominikschmidt.xyz/simplified-recipes-1M).
 
 ![Maki image](assets/maki1.jpg)
 
