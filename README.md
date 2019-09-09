@@ -2,6 +2,9 @@
 
 This neural network can tell you which other ingredients you can add to your cooking recipes to improve them.
 
+
+![Maki image](https://images.unsplash.com/photo-1555341748-a9d443dc3c14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
+
 For example, using this (partial) ingredient list for maki (sushi) as input [`salt`, `sugar`, `rice`, `cucumber`, `nori`, `sushi rice`], the network successfully suggests fitting ingredients including common fillings like `avocado`, `salmon` and `cucumber`. 
 
 _(top 14 out of 3500 known ingredients shown, parenthesized ingredients are similar to one or more ingredients in the input and are not helpful and not hard to guess for the network)_
@@ -24,6 +27,9 @@ _(top 14 out of 3500 known ingredients shown, parenthesized ingredients are simi
 | (`english cucumber`) | 0.006      | X        | as a filling                              |
 
 In other training attempts the model also suggested `crab sticks`, `ginger` and `mango`.
+
+
+![Burrito image](https://images.unsplash.com/photo-1562059390-a761a084768e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3812&q=80)
 
 For the (partial) burrito recipe [`peppers`, `rice`, `tortillas`, `black beans`, `flour tortillas`, `guacamole`] the model suggested many common burrito ingredients, but also less common ones like `mozzarella cheese` and `corn`.
 
@@ -49,6 +55,8 @@ For the (partial) burrito recipe [`peppers`, `rice`, `tortillas`, `black beans`,
 In other training attempts the model also suggested `ground beef` and `salt`.
 
 
+![Vegetables and rice dish image](https://images.unsplash.com/photo-1540100716001-4b432820e37f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2286&q=80)
+
 For the fairly basic vegetables and rice recipe [`salt`, `pepper`, `tomatoes`, `carrots`, `oil`, `seasoning`, `rice`, `bell peppers`, `vegetables`, `spices`] the network suggested adding many other kinds of vegetables and also chicken. 
 
 | Ingredient             | confidence | fitting? | notes      |
@@ -63,8 +71,8 @@ For the fairly basic vegetables and rice recipe [`salt`, `pepper`, `tomatoes`, `
 | `zucchini`             | 0.056      | X        | vegetables |
 | (`italian seasoning`)  | 0.049      | X        | seasoning  |
 | `sugar`                | 0.048      |          |            |
-| `celery`               | 0.033      | ?        | vegetables |
-| `water`                | 0.030      | ?        |            |
+| `celery`               | 0.033      | X        | vegetables |
+| `water`                | 0.030      | ~        |            |
 | `garlic`               | 0.027      | X        | seasoning  |
 | (`black pepper`)       | 0.022      | X        | seasoning  |
 
