@@ -7,7 +7,7 @@ class Recipes:
         self.load_recipes()
 
     def load_recipes(self):
-        with np.load('recipes.npz', allow_pickle=True) as data:
+        with np.load('simplified-recipes-1M.npz', allow_pickle=True) as data:
             self.recipes = data['recipes']
             self.ingredients = data['ingredients']
         np.random.shuffle(self.recipes)
