@@ -1,9 +1,9 @@
 # RecipeNet
 
-This neural network can tell you which other ingredients you can add to your cooking recipes to improve them.
+This neural network can tell you which other ingredients you can add to your cooking recipes to improve them. It's trained on the [simplified-recipes-1M dataset](https://dominikschmidt.xyz/simplified-recipes-1M) which differentiates between 3500 different ingredients.  
+You can read the full article [here](https://dominikschmidt.xyz/recipe-net).
 
-
-![Maki image](https://images.unsplash.com/photo-1555341748-a9d443dc3c14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
+![Maki image](assets/maki1.jpg)
 
 For example, using this (partial) ingredient list for maki (sushi) as input [`salt`, `sugar`, `rice`, `cucumber`, `nori`, `sushi rice`], the network successfully suggests fitting ingredients including common fillings like `avocado`, `salmon` and `cucumber`. 
 
@@ -29,7 +29,7 @@ _(top 14 out of 3500 known ingredients shown, parenthesized ingredients are simi
 In other training attempts the model also suggested `crab sticks`, `ginger` and `mango`.
 
 
-![Burrito image](https://images.unsplash.com/photo-1562059390-a761a084768e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3812&q=80)
+![Burrito image](assets/burrito.jpg)
 
 For the (partial) burrito recipe [`peppers`, `rice`, `tortillas`, `black beans`, `flour tortillas`, `guacamole`] the model suggested many common burrito ingredients, but also less common ones like `mozzarella cheese` and `corn`.
 
@@ -55,7 +55,7 @@ For the (partial) burrito recipe [`peppers`, `rice`, `tortillas`, `black beans`,
 In other training attempts the model also suggested `ground beef` and `salt`.
 
 
-![Vegetables and rice dish image](https://images.unsplash.com/photo-1540100716001-4b432820e37f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2286&q=80)
+![Vegetables and rice dish image](assets/rice1.jpg)
 
 For the fairly basic vegetables and rice recipe [`salt`, `pepper`, `tomatoes`, `carrots`, `oil`, `seasoning`, `rice`, `bell peppers`, `vegetables`, `spices`] the network suggested adding many other kinds of vegetables and also chicken. 
 
