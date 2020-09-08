@@ -77,14 +77,16 @@ For the fairly basic vegetables and rice recipe [`salt`, `pepper`, `tomatoes`, `
 | (`black pepper`)       | 0.022      | X        | seasoning  |
 
 
+## Download
+You can download the code  above. Go [here](https://dominikschmidt.xyz/simplified-recipes-1M/) for the dataset-only download and further information on the format.
 
 
 ## How to use
-(skip to step 4 if you already have a `recipes.npz` file and do not wish to regenerate the dataset with different parameters)
+(skip to step 4 if you already have the `simplified-recipes-1M.npz` file and do not wish to recreate the dataset with different parameters)
 
 1. Manually download the three used Kaggle datasets as described in the second cell in `recipeprep.ipynb`
 2. Use `recipeprep.ipynb` to download all other datasets and extract, merge, process and clean all of them. Here all used datasets get unified, messy ingredient strings get stripped of non-alpha chars and similar ingredients get merged. This step creates a ~200MB file `data.pickle` that contains preprocessed recipe and ingredient data.
-3. Use `ingredient_extract.ipynb` to further clean and simplify ingredients. This is necessary since ingredients are initially in a bad format (like '1 1/2 lbs of chicken breasts' or 'a finely blended 2:3 mix of greek yoghurt and milk' instead of 'chicken' or ['yoghurt', 'milk']). This step creates a ~60MB file `recipes.npz` containing simplified recipe-ingredient-lists using the most common 3500 ingredients. This can take up to two hours.
+3. Use `ingredient_extract.ipynb` to further clean and simplify ingredients. This is necessary since ingredients are initially in a bad format (like '1 1/2 lbs of chicken breasts' or 'a finely blended 2:3 mix of greek yoghurt and milk' instead of 'chicken' or ['yoghurt', 'milk']). This step creates a ~60MB file `recipes.npz` containing simplified recipe-ingredient-lists using the most common 3500 ingredients. This can take up to two hours. The next step reads the `simplified-recipes-1M.npz` dataset so if you want to use your recreated dataset make sure to replace it with your `recipes.npz` file.
 4. Use `recipenet.ipynb` to train or load the neural network and make predictions. Training for 4-8 epochs takes 15-30 minutes on an NVIDIA RTX 2080 Ti GPU depending on the selected architecture.
 
 - `hparam_tune.py` contains code for hyperparameter optimation with TensorBoard
